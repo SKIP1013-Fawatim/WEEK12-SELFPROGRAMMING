@@ -1,0 +1,43 @@
+package myMethods;
+import java.util.Scanner;
+public class SearchEdit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+	    int[] item = new int[]{10,20,30,40,50,60,70,80,90,100};
+	    
+	    System.out.println("Item Array: ");
+	    
+	    for (int i = 0; i < item.length; i++)
+			System.out.print(item[i]+ " ");  
+	    
+	    editValue(item,60);
+	    
+	    System.out.println();
+	    
+	    printArray(item);
+	    
+	}
+	
+	public static void editValue(int[] num, int searchValue){
+	  boolean edit=false;   
+	  for (int i=0; i<num.length; i++)
+		  if(searchValue==num[i]){
+			  num[i]=65;
+			  edit=true;
+			  break;}
+	  
+	  if (edit == false)
+	      System.out.println("The search value is not in the list.");
+		  }
+	
+	public static void printArray(int[] number)
+	{
+		 System.out.println("Item Array: ");
+	     for (int index = 0; index < number.length; index++)
+		 System.out.print(number[index]+" ");  
+	
+	}
+}      
