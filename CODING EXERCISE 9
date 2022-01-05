@@ -1,0 +1,52 @@
+package myMethods;
+import java.util.Scanner;
+public class SumLargest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int[] listA = {11,22,36,42,15,46,27,48,19,10};
+	    int total, i;
+	  
+	     // call sumArray method and return a value to total
+
+	    total = sumArray (listA);
+	    System.out.println("\n The sum of ListA is :" + total);
+
+	   // call indexLargestElement and return the index value to largest
+	   // element in the array
+	    
+	   i = indexLargestElement (listA);
+	   System.out.println("\n The largest element is :" + listA[i]);
+
+
+	}
+	
+	public static int sumArray(int[] list)
+	{
+	       
+	       int sum = 0;
+	       
+	       for (int i = 0; i < list.length; i++)
+	    	   sum = sum + list[i];
+		 
+	       return sum;
+	}
+
+	public static int indexLargestElement(int[] list)
+	{
+
+	         int largest = list[0];
+	         int location =0;
+	         
+	         for (int i = 1; i < list.length; i++)
+	 	     if(largest < list[i]) {
+	 	    	largest = list[i];
+	            location = i;}
+	         
+	          return location;
+	} 	 
+
+
+}
