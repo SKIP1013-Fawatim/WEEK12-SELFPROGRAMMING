@@ -1,0 +1,32 @@
+package myMethods;
+import java.util.Scanner;
+public class ReverseElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int item[] = new int[10];
+		
+		System.out.println("Enter ten integers number:");
+	    for(int i = 0; i < item.length; i++)
+		   item[i] = sc.nextInt();
+	    
+		   reverseOrder(item);
+		}
+	
+		public static void reverseOrder(int[] x){	
+			
+		   //Print the output in reverse order are: ");
+			System.out.println("The numbers before reverse order are:");
+			for(int i = 0; i < x.length ; i++)
+				  System.out.print(x[i]+" ");
+			
+			System.out.println();
+			
+		    System.out.println("The numbers in reverse order are: ");
+			for(int i = (x.length-1); i >= 0; i--)
+			  System.out.print(x[i]+" ");
+		}
+
+}
