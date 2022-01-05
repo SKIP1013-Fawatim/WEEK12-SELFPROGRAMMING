@@ -1,0 +1,28 @@
+package myMethods;
+import java.util.Scanner;
+public class Search {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int searchValue = 30;
+		int[] arrays = new int[] {10,40,80,90,60,70,50,30,80,60};
+		
+		int i = search(arrays,searchValue);
+		
+		System.out.println("search: "+searchValue+" is found at index "+i);
+
+	}
+	
+	public static int search (int[] num, int x){
+		   int location=0;
+		   
+		   for (int i=0; i <num.length; i++) {
+		      if(num[i] == x)
+		         location = i;}
+		   
+		   return location;
+		}
+
+}
