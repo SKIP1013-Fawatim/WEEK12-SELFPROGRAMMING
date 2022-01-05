@@ -1,0 +1,33 @@
+package myMethods;
+import java.util.Scanner;
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("I have a message for you.");
+		showMessage();
+		System.out.println("That's all folks!");
+		
+		showMessage("Ali");
+		
+		showMessage("Ali",5);
+
+	}
+	
+	public static void showMessage() {
+		System.out.println("Hello World.");
+	}
+	
+	public static void showMessage(String name) {
+		System.out.println("Name is "+name);
+	}
+	
+	public static void showMessage(String name, int num) {
+		for (int i=0; i < num; i++ )
+		  	System.out.println("Hello, " + name);
+
+	}
+
+}
