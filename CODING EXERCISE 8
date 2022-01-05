@@ -1,0 +1,31 @@
+package myMethods;
+import java.util.Scanner;
+public class Square {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int value=2;
+		
+		square(value);
+		
+		squareone(3);
+		
+		squaretwo(value*2);
+
+	}
+	
+	public static void square(int x){
+		System.out.println(x*x);
+	}
+	
+	public static void squareone(int a){
+		System.out.println(a*a);
+	}
+	
+	public static void squaretwo(int z){
+		System.out.println(z*z);
+	}
+
+}
